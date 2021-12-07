@@ -1,0 +1,62 @@
+.Content2 {
+  margin-top: 50px;
+  .container {
+
+  }
+
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: block;
+    width: 540px;
+    height: 400px;
+    margin-top: 30px;
+    padding: 20px;
+
+
+    &.bg1 {
+      background: url("./images/cat1.png") center top no-repeat;
+      background-size: cover;
+    }
+
+    &.bg2 {
+      background: url("./images/cat2.png") center top no-repeat;
+      background-size: cover;
+    }
+
+    &.bg3 {
+      background: url("./images/cat3.png") center top no-repeat;
+      background-size: cover;
+    }
+
+    &.bg4 {
+      background: url("./images/cat4.png") center top no-repeat;
+      background-size: cover;
+    }
+
+    &-text {
+      margin-top: 300px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &-button {
+      background: transparent;
+      color: #46ad46;
+      font-size: 16px;
+      padding: 5px;
+      cursor: pointer;
+      margin-top: 2px;
+    }
+  }
+}

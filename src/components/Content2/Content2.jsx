@@ -6,16 +6,20 @@ const Content2 = () => {
 
     const name = [
         {
-            text: 'Тонкинез'
+            text: 'Тонкинез',
+            id: 1
         },
         {
-            text: 'Мэнкс'
+            text: 'Мэнкс',
+            id: 2
         },
         {
-            text:'Рагамафин'
+            text:'Рагамафин',
+            id: 3
         },
         {
-            text:'Бирманская кошка'
+            text:'Бирманская кошка',
+            id: 4
         }
     ]
     return (
@@ -23,9 +27,9 @@ const Content2 = () => {
             <div className='container'>
                 <h2 className='Content2__title'>Породы кошек</h2>
                 <ul className='Content2__list'>
-                    {name.map(({text})=> {
+                    {name.map(({text,id})=> {
                             return(
-                                <li key={name} className='Content2__item bg1'>
+                                <li key={id} className={`Content2__item bg${id}`}>
                                     <p className='Content2__item-text'>{text}</p>
                                     <button className='Content2__item-button'>Подробнее</button>
                                 </li>

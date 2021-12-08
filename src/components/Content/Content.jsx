@@ -4,7 +4,7 @@ import cat1 from "./images/cat1.png";
 import cat2 from "./images/cat2.png";
 import cat3 from "./images/cat3.png";
 
-const Content = () =>{
+const Content = () => {
     const cats = [
         {
             img: cat1,
@@ -27,7 +27,7 @@ const Content = () =>{
             <div className='container'>
                 <h1 className='Content__title'>Самый крутой контент про кошек на свете</h1>
                 <ul className='Content__list'>
-                    {cats.map(({img,text})=>{
+                    {cats.map(({img, text}) => {
                         return (
                             <li key={img} className='Content__item'>
                                 <img className='Content__item-img' src={img} alt=""/>
